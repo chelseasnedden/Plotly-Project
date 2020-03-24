@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
+# Plot.ly Homework - Belly Button Biodiversity
 
-You can use the [editor on GitHub](https://github.com/chelseasnedden/Plotly-Challenge/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+![Bacteria by filterforge.com](Images/bacteria.jpg)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In this assignment, I have built an interactive dashboard to explore the [Belly Button Biodiversity Dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels. The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare. The following stepse are the directions I was given.
+---
 
-### Markdown
+## Step 1: Plotly
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. Use the D3 library to read in `samples.json`.
 
-```markdown
-Syntax highlighted code block
+2. Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
 
-# Header 1
-## Header 2
-### Header 3
+* Use `sample_values` as the values for the bar chart.
 
-- Bulleted
-- List
+* Use `otu_ids` as the labels for the bar chart.
 
-1. Numbered
-2. List
+* Use `otu_labels` as the hovertext for the chart.
 
-**Bold** and _Italic_ and `Code` text
+  ![bar Chart](Images/hw01.png)
 
-[Link](url) and ![Image](src)
-```
+3. Create a bubble chart that displays each sample.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+* Use `otu_ids` for the x values.
 
-### Jekyll Themes
+* Use `sample_values` for the y values.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chelseasnedden/Plotly-Challenge/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+* Use `sample_values` for the marker size.
 
-### Support or Contact
+* Use `otu_ids` for the marker colors.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* Use `otu_labels` for the text values.
+
+![Bubble Chart](Images/bubble_chart.png)
+
+4. Display the sample metadata, i.e., an individual's demographic information.
+
+5. Display each key-value pair from the metadata JSON object somewhere on the page.
+
+![hw](Images/hw03.png)
+
+6. Update all of the plots any time that a new sample is selected. An example dashboard is shown below:
+
+![hw](Images/hw02.png)
+
+## Deployment
+
+I have deployed the assignment to GitHub Pages. The link to my Github Page is here: [Belly Button Dashboard](https://chelseasnedden.github.io/Plotly-Challenge/)
+
+### About the Data
+
+Hulcr, J. et al.(2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: [http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/](http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/)
