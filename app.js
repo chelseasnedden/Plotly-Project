@@ -88,7 +88,7 @@ function getPlot(id) {
         // create the bubble plot
         Plotly.newPlot("bubble", data1, layout_b); 
   
-        // The guage chart
+        // gauge chart
   
         var data_g = [
           {
