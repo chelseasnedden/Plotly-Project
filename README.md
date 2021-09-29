@@ -45,7 +45,7 @@ In this assignment, I have built an interactive dashboard to explore the [Belly 
 
 ## Deployment
 
-I have deployed the assignment to GitHub Pages. The link to my Github Page is here: [Belly Button Dashboard](https://chelseasnedden.github.io/Plotly-Challenge/)
+I have deployed the assignment to GitHub Pages. The link to my Github Page is here: [Belly Button Dashboard](https://chelseasnedden.github.io/Plotly-Project/)
 
 ### About the Data
 
